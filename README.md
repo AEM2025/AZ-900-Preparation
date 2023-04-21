@@ -141,17 +141,123 @@ Azure management groups provide a level of scope above subscriptions.
 </li>
 </ol>
 
-
-
-
-
-
-
-
-
-
-
 #### 2.2 - Describe Azure compute and networking services:
+
+<ul>
+<li>
+Azure VM: VMs provide infrastructure as a service (IaaS) in the form of a virtualized server and can be used in many ways.
+</li>
+  <li>VMs are an ideal choice when you need:
+    <ul>
+      <li> Total control over the operating system (OS).</li>
+      <li> The ability to run custom software.</li>
+      <li> To use custom hosting configurations.</li>
+    </ul>
+  </li>
+
+
+<li>Virtual machine scale sets: let you create and manage a group of identical, load-balanced VMs. If you simply created multiple VMs with the same purpose, you’d need to ensure they were all configured identically and then set up network routing parameters to ensure efficiency. You’d also have to monitor the utilization to determine if you need to increase or decrease the number of VMs.</li>
+
+<li>Scale sets allow you to centrally manage, configure, and update a large number of VMs in minutes.</li>
+
+
+
+<li>Virtual machine availability sets: are another tool to help you build a more resilient, highly available environment. Availability sets are designed to ensure that VMs stagger updates and have varied power and network connectivity, preventing you from losing all your VMs with a single network or power failure.</li>
+
+
+<li>Availability sets do this by grouping VMs in two ways: 
+  <ol type="1">
+    <li>Update domain: The update domain groups VMs that can be rebooted at the same time.</li>
+    <li>Fault domain: The fault domain groups your VMs by common power source and network switch. By default, an availability set will split your VMs across up to three fault domains.</li>
+  </ol>
+</li>
+
+
+<li>Some common examples or use cases for virtual machines include:
+  <ul>
+    <li> During testing and development.</li>
+    <li> When running applications in the cloud. </li>
+    <li> When extending your datacenter to the cloud.</li>
+    <li> During disaster recovery.</li>
+  </ul>
+</li>
+
+<li>VM Resources:
+  <ul>
+    <li> Size (purpose, number of processor cores, and amount of RAM)</li>
+    <li> Storage disks (hard disk drives, solid state drives, etc.)</li>
+    <li> Networking (virtual network, public IP address, and port configuration)</li>
+  </ul>
+</li>
+
+
+<li>Azure Virtual Desktop: is a desktop and application virtualization service that runs on the cloud. It enables you to use a cloud-hosted version of Windows from any location. Azure Virtual Desktop works across devices and operating systems, and works with apps that you can use to access remote desktops or most modern browsers.</li>
+
+
+<li>Azure Containers: Containers are a virtualization environment.</li>
+
+<li>Azure Container Instances: offer the fastest and simplest way to run a container in Azure; without having to manage any virtual machines or adopt any additional services. Azure Container Instances are a platform as a service (PaaS).</li>
+
+**Note: VM virtualize the hardware. containers virtualize the OS.**
+
+<li>Azure Functions: is an event-driven, serverless compute option that doesn’t require maintaining virtual machines or containers. If you build an app using VMs or containers, those resources have to be "running" in order for your app to function. With Azure Functions, an event wakes the function, alleviating the need to keep resources provisioned when there are no events.</li>
+
+
+
+<li>Azure App Service: enables you to build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability. App Service supports Windows and Linux. It enables automated deployments from GitHub, Azure DevOps, or any Git repo to support a continuous deployment model.</li>
+
+<li>Azure App Service is a robust hosting option that you can use to host your apps in Azure. Azure App Service lets you focus on building and maintaining your app, and Azure focuses on keeping the environment up and running.</li>
+
+<li>Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It supports multiple languages, including .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. It also supports both Windows and Linux environments.</li>
+
+<li>Types of app services:
+  <ul>
+    <li> Web apps
+    <li> API apps
+    <li> WebJobs
+    <li> Mobile apps
+  </ul>
+</li>
+
+<li>Azure Virtual Private Networks (VPN):  uses an encrypted tunnel within another network. VPNs are typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet). Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks. VPNs can enable networks to safely and securely share sensitive information.</li>
+
+
+<li>VPN gateway:  is a type of virtual network gateway. </li>
+
+<li>It enables the following connectivity:
+  <ul>
+    <li> Connect on-premises datacenters to virtual networks through a site-to-site connection.</li>
+    <li> Connect individual devices to virtual networks through a point-to-site connection.</li>
+    <li> Connect virtual networks to other virtual networks through a network-to-network connection.</li>
+  </ul>
+</li>
+
+<li>Azure ExpressRoute: lets you extend your on-premises networks into the Microsoft cloud over a private connection, with the help of a connectivity provider. This connection is called an ExpressRoute Circuit. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365. This allows you to connect offices, datacenters, or other facilities to the Microsoft cloud. Each location would have its own ExpressRoute circuit.</li>
+
+
+<li>Azure DNS:  is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure. By hosting your domains in Azure, you can manage your DNS records using the same credentials, APIs, tools, and billing as your other Azure services.</li>
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
 #### 2.3 - Describe Azure storage services:
 #### 2.4 - Describe Azure identity, access, and security:
 
