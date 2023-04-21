@@ -11,6 +11,9 @@ Exam includes three knowledge domain areas:
 |Describe Azure management and governance	|30-35%|
 
 ## My Notes:
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/Azure_Services%20.png" align="center" >
+
 ### 1 - Describe cloud concepts:<br><br>
 #### 1.1 - Describe cloud computing:
 
@@ -344,8 +347,6 @@ During sign-in, Conditional Access collects signals from the user, makes decisio
 
 - Resource Manager: is a management service that provides a way to organize and secure your cloud resources. You typically access Resource Manager from the Azure portal, Azure Cloud Shell, Azure PowerShell, and the Azure CLI.
 
-<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20zero-trust%20.png" align="center" width="500" height="300" >
-
 - Zero Trust: is a security model that assumes the worst case scenario and protects resources with that expectation. Zero Trust assumes breach at the outset, and then verifies each request as though it originated from an uncontrolled network.
 
 <img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20zero-trust%20.png" align="center" width="500" height="300" >
@@ -372,9 +373,13 @@ During sign-in, Conditional Access collects signals from the user, makes decisio
 
 ## Youtube videos:
 - [Microsoft Azure Fundamentals Certification Course (AZ-900) - Pass the exam in 3 hours! FreeCodeCamp](https://www.youtube.com/watch?v=NKEFWyqJ5XA&pp=ygUGYXotOTAw)
-- [Arabic - Microsoft Azure Fundamentals | EXAM AZ-900 By Hmada Glal](https://www.youtube.com/playlist?list=PLCIJjtzQPZJ-CDaKOAlm3JfpL2kddIhRA)
+- [English - Microsoft Azure Fundamentals | AZ-900 By Adam Marczak](https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM)
+- [Arabic - Microsoft Azure Fundamentals | AZ-900 By Hmada Glal](https://www.youtube.com/playlist?list=PLCIJjtzQPZJ-CDaKOAlm3JfpL2kddIhRA)
 - [Arabic - Microsoft Azure Fundamentals | AZ-900 By Mohamed Zohdy](https://www.youtube.com/playlist?list=PLDxVq3TlR9y3D61tEq4BbRZ8f5bv2_PFt)
 - [Arabic - Microsoft Azure Fundamentals | AZ-900 By Sajjad Ghaffoori](https://www.youtube.com/playlist?list=PLAqaqJU4wzYV00PpXhPpaKEBNgsl7TZdK)
 
 ## Microsoft learn:
 - [Master the basics of Azure: Fundamentals](https://learn.microsoft.com/en-us/users/sandramarin/collections/n6ga8m0jkgrwk)
+
+## Coursera Specialization:
+- [Microsoft Azure Fundamentals AZ-900 Exam Prep Specialization](https://www.coursera.org/specializations/microsoft-azure-fundamentals-az-900)
