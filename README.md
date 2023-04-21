@@ -75,6 +75,82 @@ Exam includes three knowledge domain areas:
 
 ### 2 - Describe Azure architecture and services:<br><br>
 #### 2.1 - Describe the core architectural components of Azure:
+Components of Azure may be broken down into two main groupings: 
+##### 1 - Physical infrastructure:
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/2.1%20-%20Region%20pairs.png" align="center" alt="Region pairs" width="700" height="400" >
+<ul>
+<li>Regions: is a geographical area on the planet that contains at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network. 
+</li>
+
+<li> Availability Zones:  are physically separate datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking.</li>
+
+<li>Azure services that support availability zones fall into three categories:
+  <ol type="1">
+    <li>Zonal services: You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).</li>
+    <li>Zone-redundant services: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).</li>
+    <li>Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.</li>
+  </ol>
+</li>
+
+<li> Region pairs: regions are paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away. </li>
+
+<li> Sovereign Regions: are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes. </li>
+
+<li>Azure sovereign regions include:
+  <ul>
+    <li> US DoD Central, US Gov Virginia, US Gov Iowa and more: These regions are physical and logical network-isolated instances of Azure for U.S. government agencies         and partners. These datacenters are operated by screened U.S. personnel and include additional compliance certifications. </li>
+    <li> China East, China North, and more: These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft doesn't directly           maintain the datacenters. </li>
+  </ul>
+</li>
+
+</ul>
+
+
+##### 2 - Management infrastructure
+
+<ol type="1">
+
+<li> Azure resources: Anything you create, provision, deploy, etc. is a resource. Virtual Machines (VMs), virtual networks, databases, cognitive services, etc. are all considered resources within Azure. 
+
+Azure resource groups: Resource groups are simply groupings of resources. 
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/2.1%20-%20Resource%20Group%20.png" align="center" alt="Region pairs" width="700" height="400" >
+
+</li>
+
+<li> Azure subscriptions: A subscription provides you with authenticated and authorized access to Azure products and services. 
+There are two types of subscription boundaries that you can use:
+  <ul>
+    <li> Billing boundary: This subscription type determines how an Azure account is billed for using Azure. You can create multiple subscriptions for different types          of billing requirements. Azure generates separate billing reports and invoices for each subscription so that you can organize and manage costs.
+    </li>
+    <li> Access control boundary: Azure applies access-management policies at the subscription level, and you can create separate subscriptions to reflect different organizational structures. 
+    </li>
+  </ul>
+  
+  <img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/2.2%20-%20Subscriptions%20.png" align="center" alt="Region pairs" width="700" height="400" >
+  
+</li>
+
+<li> Azure management groups: Resources are gathered into resource groups, and resource groups are gathered into subscriptions. If you’re just starting in Azure that might seem like enough hierarchy to keep things organized. But imagine if you’re dealing with multiple applications, multiple development teams, in multiple geographies.
+
+Azure management groups provide a level of scope above subscriptions. 
+
+  <img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/2.3%20-%20Management-groups-subscriptions%20.png" align="center" alt="Region pairs" width="700" height="400" >
+
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
 #### 2.2 - Describe Azure compute and networking services:
 #### 2.3 - Describe Azure storage services:
 #### 2.4 - Describe Azure identity, access, and security:
