@@ -304,6 +304,65 @@ Azure storage services:
 
 #### 2.4 - Describe Azure identity, access, and security:
 
+- Azure Active Directory (Azure AD) is a directory service that enables you to sign in and access both Microsoft cloud applications and cloud applications that you develop. Azure AD can also help you maintain your on-premises Active Directory deployment.
+
+- Azure AD provides services such as:
+  - Authentication: This includes verifying identity to access applications and resources.
+  - Single sign-on: Single sign-on (SSO) enables you to remember only one username and one password to access multiple applications.
+  - Application management: You can manage your cloud and on-premises apps by using Azure AD.
+  - Device management: Along with accounts for individual people, Azure AD supports the registration of devices.
+
+- Azure AD Connect: enables you to connect your on premises AD to Azure AD.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20azure-active-directory-sync-topology%20.png" align="center" width="700" height="300" >
+
+- Azure Active Directory Domain Services (Azure AD DS) is a service that provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication.
+
+- Multifactor authentication: is the process of prompting a user for an extra form (or factor) of identification during the sign-in process.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20passwordless-convenience-security.png" align="center" width="500" height="300" >
+
+- Conditional Access: is a tool that Azure Active Directory uses to allow (or deny) access to resources based on identity signals. These signals include who the user is, where the user is, and what device the user is requesting access from.
+
+- Conditional Access helps IT administrators:
+  - Empower users to be productive wherever and whenever.
+  - Protect the organization's assets.
+
+During sign-in, Conditional Access collects signals from the user, makes decisions based on those signals, and then enforces that decision by allowing or denying the access request or challenging for a multifactor authentication response.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20conditional-access%20.png" align="center" width="700" height="300" >
+
+- Azure role-based access control: is applied to a scope, which is a resource or set of resources that this access applies to. So, if you hire a new engineer and add them to the Azure RBAC group for engineers, they automatically get the same access as the other engineers in the same Azure RBAC group.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20role-based-access-scope%20.png" align="center" width="500" height="300" >
+
+- Scopes include:
+  - A management group (a collection of multiple subscriptions).
+  - A single subscription.
+  - A resource group.
+  - A single resource.
+
+- Resource Manager: is a management service that provides a way to organize and secure your cloud resources. You typically access Resource Manager from the Azure portal, Azure Cloud Shell, Azure PowerShell, and the Azure CLI.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20zero-trust%20.png" align="center" width="500" height="300" >
+
+- Zero Trust: is a security model that assumes the worst case scenario and protects resources with that expectation. Zero Trust assumes breach at the outset, and then verifies each request as though it originated from an uncontrolled network.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20zero-trust%20.png" align="center" width="500" height="300" >
+
+- The objective of defense-in-depth is to protect information and prevent it from being stolen by those who aren't authorized to access it.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.2%20-%20defense-depth%20.png" align="center" width="500" height="300" >
+
+- Here's a brief overview of the role of each layer:
+  - The physical security layer is the first line of defense to protect computing hardware in the datacenter.
+  - The identity and access layer controls access to infrastructure and change control.
+  - The perimeter layer uses distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
+  - The network layer limits communication between resources through segmentation and access controls.
+  - The compute layer secures access to virtual machines.
+  - The application layer helps ensure that applications are secure and free of security vulnerabilities.
+  - The data layer controls access to business and customer data that you need to protect.
+
 
 ### 3 - Describe Azure management and governance:<br><br>
 #### 3.1 - Describe cost management in Azure:
