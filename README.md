@@ -237,28 +237,71 @@ Azure VM: VMs provide infrastructure as a service (IaaS) in the form of a virtua
 
 <li>Azure DNS:  is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure. By hosting your domains in Azure, you can manage your DNS records using the same credentials, APIs, tools, and billing as your other Azure services.</li>
 
-
-
-
-
-
-
-
-
-
-
 </ul>
 
-
-
-
-
-
-
-
-
-
 #### 2.3 - Describe Azure storage services:
+
+list of redundancy options:
+
+- Locally redundant storage (LRS): replicates your data three times within a single data center in the primary region. LRS provides at least 11 nines of durability (99.999999999%) of objects over a given year.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.1%20-%20locally-redundant-storage.png" align="center" width="500" height="300" >
+
+- Zone-redundant storage (ZRS): replicates your Azure Storage data synchronously across three Azure availability zones in the primary region. ZRS offers durability for Azure Storage data objects of at least 12 nines (99.9999999999%) over a given year.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.1%20-%20zone-redundant-storage.png" align="center" width="500" height="300" >
+
+- Geo-redundant storage (GRS): offers durability for Azure Storage data objects of at least 16 nines (99.99999999999999%) over a given year. geo-redundant storage (GRS) and geo-zone-redundant storage (GZRS). GRS is similar to running LRS in two regions, and GZRS is similar to running ZRS in the primary region and LRS in the secondary region.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.1%20-%20geo-redundant-storage.png" align="center" width="500" height="300" >
+
+- Geo-zone-redundant storage (GZRS)
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/3.1%20-%20geo-zone-redundant-storage-138ab5af.png" align="center" width="500" height="300" >
+
+- Read-access geo-redundant storage (RA-GRS)
+- Read-access geo-zone-redundant storage (RA-GZRS)
+
+| Type | Supported services| 	Redundancy Options	| Usage|
+|------|-------------------|-----------------------|------|
+| Standard general-purpose v2 |	Blob Storage (including Data Lake Storage), Queue Storage, Table Storage, and Azure Files |	LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS |	Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. If you want support for network file system (NFS) in Azure Files, use the premium file shares account type.|
+| Premium block blobs	| Blob Storage (including Data Lake Storage) |	LRS, ZRS |	Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transaction rates or that use smaller objects or require consistently low storage latency. |
+| Premium file shares |	Azure Files	| LRS, ZRS | Premium storage account type for file shares only. Recommended for enterprise or high-performance scale applications. Use this account type if you want a storage account that supports both Server Message Block (SMB) and NFS file shares. |
+| Premium page blobs |	Page blobs only |	LRS |	Premium storage account type for page blobs only. |
+
+Azure storage services:
+- Azure Blobs: A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.
+- Blob storage is ideal for:
+  - Serving images or documents directly to a browser.
+  - Storing files for distributed access.
+  - Streaming video and audio.
+  - Storing data for backup and restore, disaster recovery, and archiving.
+  - Storing data for analysis by an on-premises or Azure-hosted service.
+
+- Blob storage tiers:
+  - Hot access tier: Optimized for storing data that is accessed frequently (for example, images for your website).
+  - Cool access tier: Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
+  - Archive access tier: Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
+
+
+- Azure Files: Managed file shares for cloud or on-premises deployments. offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) or Network File System (NFS) protocols.
+- Azure Queues: A messaging store for reliable messaging between application components.
+- Azure Disks: Block-level storage volumes for Azure VMs.
+
+- Azure Migrate: is a service that helps you migrate from an on-premises environment to the cloud. Azure Migrate functions as a hub to help you manage the assessment and migration of your on-premises datacenter to Azure.
+
+- Azure Migrate hub also includes the following tools to help with migration:
+  - Azure Migrate: Discovery and assessment. Discover and assess on-premises servers running on VMware, Hyper-V, and physical servers in preparation for migration to Azure.
+  - Azure Migrate: Server Migration. Migrate VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
+  - Data Migration Assistant. Data Migration Assistant is a stand-alone tool to assess SQL Servers. It helps pinpoint potential problems blocking migration. It identifies unsupported features, new features that can benefit you after migration, and the right path for database migration.
+  - Azure Database Migration Service. Migrate on-premises databases to Azure VMs running SQL Server, Azure SQL Database, or SQL Managed Instances.
+  - Web app migration assistant. Azure App Service Migration Assistant is a standalone tool to assess on-premises websites for migration to Azure App Service. Use Migration Assistant to migrate .NET and PHP web apps to Azure.
+  - Azure Data Box. Use Azure Data Box products to move large amounts of offline data to Azure.
+
+- Azure file movement options:
+  - AzCopy is a command-line utility that you can use to copy blobs or files to or from your storage account. With AzCopy, you can upload files, download files, copy files between storage accounts, and even synchronize files. AzCopy can even be configured to work with other cloud providers to help move files back and forth between clouds.
+  - Azure Storage Explorer is a standalone app that provides a graphical interface to manage files and blobs in your Azure Storage Account. It works on Windows, macOS, and Linux operating systems and uses AzCopy on the backend to perform all of the file and blob management tasks. With Storage Explorer, you can upload to Azure, download from Azure, or move between storage accounts.
+  - Azure File Sync: is a tool that lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server. 
+
 #### 2.4 - Describe Azure identity, access, and security:
 
 
