@@ -10,6 +10,14 @@ Exam includes three knowledge domain areas:
 |Describe Azure architecture and services |	35-40%|
 |Describe Azure management and governance	|30-35%|
 
+## Resources
+- [My Notes](https://github.com/AEM2025/AZ-900-Preparation#my-notes)
+- [Youtube Videos](https://github.com/AEM2025/AZ-900-Preparation#youtube-videos)
+- [Microsoft Learn path](https://github.com/AEM2025/AZ-900-Preparation#microsoft-learn)
+- [Coursera Specialization](https://github.com/AEM2025/AZ-900-Preparation#coursera-specialization)
+- [Practice Questions from Microsoft](https://learn.microsoft.com/en-us/certifications/exams/az-900/practice/assessment?assessment-type=practice&assessmentId=23)
+- [Examtopics - Dumb1](https://www.examtopics.com/exams/microsoft/az-900/)
+
 ## My Notes:
 
 <img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/Azure_Services%20.png" align="center" >
