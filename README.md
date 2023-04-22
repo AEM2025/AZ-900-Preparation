@@ -367,8 +367,76 @@ During sign-in, Conditional Access collects signals from the user, makes decisio
 
 ### 3 - Describe Azure management and governance:<br><br>
 #### 3.1 - Describe cost management in Azure:
+
+The pricing calculator and the total cost of ownership (TCO) calculator are two calculators that help you understand potential Azure expenses. Both calculators are accessible from the internet, and both calculators allow you to build out a configuration. However, the two calculators have very different purposes.
+
+- The pricing calculator: is designed to give you an estimated cost for provisioning resources in Azure. 
+
+- The TCO calculator: is designed to help you compare the costs for running an on-premises infrastructure compared to an Azure Cloud infrastructure. 
+
+Cost Management provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/6.1%20-%20cost-analysis%20.png" align="center" >
+
+-Cost alerts provide a single location to quickly check on all of the different alert types that may show up in the Cost Management service. The three types of alerts that may show up are:
+  - Budget alerts: notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. Cost Management budgets are created using the Azure portal or the Azure Consumption API.
+  - Credit alerts: notify you when your Azure credit monetary commitments are consumed. Monetary commitments are for organizations with Enterprise Agreements (EAs). 
+  - Department spending quota alerts: notify you when department spending reaches a fixed threshold of the quota.
+
 #### 3.2 - Describe features and tools in Azure for governance and compliance:
+
+- Azure Blueprints lets you standardize cloud subscription or environment deployments. Instead of having to configure features like Azure Policy for each new subscription, with Azure Blueprints you can define repeatable settings and policies that are applied as new subscriptions are created. Need a new test/dev environment? Azure Blueprints lets you deploy a new Test/Dev environment with security and compliance settings already configured.
+
+- Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with corporate standards.
+
+- An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
+
+- A resource lock prevents resources from being accidentally deleted or changed.
+- Microsoft Service Trust Portal: is a portal that provides access to various content, tools, and other resources about Microsoft security, privacy, and compliance practices.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/6.1%20-%20service-trust-portal%20.png" align="center"  >
+
 #### 3.3 - Describe features and tools for managing and deploying Azure resources:
+
+- Azure provides multiple tools for managing your environment, including the:
+  - Azure portal: is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface. You can:
+    - Build, manage, and monitor everything from simple web apps to complex cloud deployments
+    - Create custom dashboards for an organized view of resources
+    - Configure accessibility options for an optimal experience
+  - Azure cloud shell: is a browser-based shell tool that allows you to create, configure, and manage Azure resources using a shell. Azure Cloud Shell support both Azure PowerShell and the Azure Command Line Interface (CLI), which is a Bash shell.
+
+  - Azure PowerShell: is a shell with which developers, DevOps, and IT professionals can run commands called command-lets (cmdlets). These commands call the Azure REST API to perform management tasks in Azure. 
+In addition to be available via Azure Cloud Shell, you can install and configure Azure PowerShell on Windows, Linux, and Mac platforms.
+
+  - Azure Command Line Interface (CLI):  is functionally equivalent to Azure PowerShell, with the primary difference being the syntax of commands. While Azure PowerShell uses PowerShell commands, the Azure CLI uses Bash commands.
+
+- Azure arc: lets you extend your Azure compliance and monitoring to your hybrid and multi-cloud configurations. Azure Arc simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform.
+
+- Azure Arc provides a centralized, unified way to:
+  - Manage your entire environment together by projecting your existing non-Azure resources into ARM.
+  - Manage multi-cloud and hybrid virtual machines, Kubernetes clusters, and databases as if they are running in Azure.
+  - Use familiar Azure services and management capabilities, regardless of where they live.
+  - Continue using traditional ITOps while introducing DevOps practices to support new cloud and native patterns in your environment.
+  - Configure custom locations as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions.
+
+- Currently, Azure Arc allows you to manage the following resource types hosted outside of Azure:
+  - Servers
+  - Kubernetes clusters
+  - Azure data services
+  - SQL Server
+  - Virtual machines (preview)
+
+- Azure Resource Manager (ARM): is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account. Anytime you do anything with your Azure resources, ARM is involved. It's equivelent to Cloudformation in AWS.
+
+- With Azure Resource Manager, you can:
+  - Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
+  - Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
+  - Re-deploy your solution throughout the development life-cycle and have confidence your resources are deployed in a consistent state.
+  - Define the dependencies between resources, so they're deployed in the correct order.
+  - Apply access control to all services because RBAC is natively integrated into the management platform.
+  - Apply tags to resources to logically organize all the resources in your subscription.
+  - Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
+
 #### 3.4 - Describe monitoring tools in Azure:
 
 - Azure Advisor: evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs. Azure Advisor is designed to help you save time on cloud optimization. The recommendation service includes suggested actions you can take right away, postpone, or dismiss.
