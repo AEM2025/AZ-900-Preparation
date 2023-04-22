@@ -371,6 +371,55 @@ During sign-in, Conditional Access collects signals from the user, makes decisio
 #### 3.3 - Describe features and tools for managing and deploying Azure resources:
 #### 3.4 - Describe monitoring tools in Azure:
 
+- Azure Advisor: evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs. Azure Advisor is designed to help you save time on cloud optimization. The recommendation service includes suggested actions you can take right away, postpone, or dismiss.
+
+- The recommendations are divided into five categories:
+  - Reliability is used to ensure and improve the continuity of your business-critical applications.
+  - Security is used to detect threats and vulnerabilities that might lead to security breaches.
+  - Performance is used to improve the speed of your applications.
+  - Operational Excellence is used to help you achieve process and workflow efficiency, resource manageability, and deployment best practices.
+  - Cost is used to optimize and reduce your overall Azure spending.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/6.1%20-%20azure-advisor-dashboard.png" align="center" >
+
+- Azure Service Health: helps you keep track of Azure resource, both your specifically deployed resources and the overall status of Azure. Azure service health does this by combining three different Azure services:
+  - Azure Status is a broad picture of the status of Azure globally. Azure status informs you of service outages in Azure on the Azure Status page. 
+  - Service Health provides a narrower view of Azure services and regions. It focuses on the Azure services and regions you're using. 
+  - Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources, such as a specific virtual machine instance. Using Azure Monitor, you can also configure alerts to notify you of availability changes to your cloud resources.
+
+- Azure Monitor:  is a platform for collecting data on your resources, analyzing that data, visualizing the information, and even acting on the results. Azure Monitor can monitor Azure resources, your on-premises resources, and even multi-cloud resources like virtual machines hosted with a different cloud provider.
+
+<img src="https://github.com/AEM2025/AZ-900-Preparation/blob/master/6.1-azure-monitor-overview-.jpg" align="center" >
+
+- Azure Log Analytics: is the tool in the Azure portal where you’ll write and run log queries on the data gathered by Azure Monitor. Log Analytics is a robust tool that supports both simple, complex queries, and data analysis. 
+
+
+- Azure Monitor Alerts are an automated way to stay informed when Azure Monitor detects a threshold being crossed. You set the alert conditions, the notification actions, and then Azure Monitor Alerts notifies when an alert is triggered.
+
+- Application Insights, Azure monitor feature, is capable of monitoring applications that are running in Azure, on-premises, or in a different cloud environment.
+- There are two ways to configure Application Insights: 
+  - Install SDK on your application.
+  - Use the Application Insights agent. The Application Insights agent is supported in C#.NET, VB.NET, Java, JavaScript, Node.js, and Python.
+  
+- Once Application Insights is up and running, you can use it to monitor a broad array of information, such as:
+  - Request rates, response times, and failure rates
+  - Dependency rates, response times, and failure rates, to show whether external services are slowing down performance
+  - Page views and load performance reported by users' browsers
+  - AJAX calls from web pages, including rates, response times, and failure rates
+  - User and session counts
+  - Performance counters from Windows or Linux server machines, such as CPU, memory, and network usage
+
+
+
+
+
+
+
+
+
+
+
+
 ## Youtube videos:
 - [Microsoft Azure Fundamentals Certification Course (AZ-900) - Pass the exam in 3 hours! FreeCodeCamp](https://www.youtube.com/watch?v=NKEFWyqJ5XA&pp=ygUGYXotOTAw)
 - [English - Microsoft Azure Fundamentals | AZ-900 By Adam Marczak](https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM)
