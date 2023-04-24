@@ -12,6 +12,7 @@ Exam includes three knowledge domain areas:
 
 ## Resources
 - [My Notes](https://github.com/AEM2025/AZ-900-Preparation#my-notes)
+- [AZ-900 Content Summarized in one page](https://repeated-anorak-3bf.notion.site/Microsoft-Azure-AZ-900-0b1d9aa9abec403a885f6cad0f34b7e7)
 - [Youtube Videos](https://github.com/AEM2025/AZ-900-Preparation#youtube-videos)
 - [Microsoft Learn path](https://github.com/AEM2025/AZ-900-Preparation#microsoft-learn)
 - [Coursera Specialization](https://github.com/AEM2025/AZ-900-Preparation#coursera-specialization)
