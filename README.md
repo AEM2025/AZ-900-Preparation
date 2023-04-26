@@ -11,8 +11,8 @@ Exam includes three knowledge domain areas:
 |Describe Azure management and governance	|30-35%|
 
 ## Resources
-- [My Notes](https://github.com/AEM2025/AZ-900-Preparation#my-notes)
-- [AZ-900 Content Summarized in one page](https://repeated-anorak-3bf.notion.site/Microsoft-Azure-AZ-900-0b1d9aa9abec403a885f6cad0f34b7e7)
+- [My Notes](https://github.com/AEM2025/AZ-900-Preparation#my-notes) | By: [Ahmed Emad](https://www.linkedin.com/in/eng-ahmed-emad/)
+- [AZ-900 Content Summarized in one page](https://repeated-anorak-3bf.notion.site/Microsoft-Azure-AZ-900-0b1d9aa9abec403a885f6cad0f34b7e7) | By: [Eng. Ahmed Abdelshafy](https://www.linkedin.com/in/ah-elsherif/)
 - [Youtube Videos](https://github.com/AEM2025/AZ-900-Preparation#youtube-videos)
 - [Microsoft Learn path](https://github.com/AEM2025/AZ-900-Preparation#microsoft-learn)
 - [Coursera Specialization](https://github.com/AEM2025/AZ-900-Preparation#coursera-specialization)
