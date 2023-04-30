@@ -19,6 +19,7 @@ Exam includes three knowledge domain areas:
 - Practice Questions
   - [Practice Questions from Microsoft](https://learn.microsoft.com/en-us/certifications/exams/az-900/practice/assessment?assessment-type=practice&assessmentId=23)
   - [Examtopics - Free dumb](https://www.examtopics.com/exams/microsoft/az-900/)
+  - [Examtopics Questions as PDF](https://github.com/AEM2025/AZ-900-Preparation/blob/master/AZ-900(Examtopics_Questions).pdf)
   - [Microsoft Certified: Azure Fundamentals | Quizlet](https://quizlet.com/783375418/microsoft-certified-azure-fundamentals-flash-cards/)
 
 ## My Notes:
